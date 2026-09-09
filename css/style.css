@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #dddddd;
+  border-bottom: 1px solid #999999;
+  padding: 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #dddddd;
+  border-top: 1px solid #999999;
+  padding: 10px;
+}
+
+header {
+  background-color: #eaeff5;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #003366;
+  font-size: 40px;
+}
+
+header img {
+  border: 3px solid #003366;
+  width: 150px;
+}
+
+.address {
+  color: #666666;
+  font-size: 14px;
+}
+
+.tagline {
+  color: #003366;
+  font-style: italic;
+}
+
+section h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #003366;
+  font-size: 22px;
+}
+
+section dl {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+section ul {
+  list-style-type: square;
+}
+
+section a {
+  color: #008080;
+  text-decoration: none;
+}
+
+section a:hover {
+  color: #003366;
+  text-decoration: underline;
+}
+
+.three-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #999999;
+  padding: 10px;
+}
+
+@media (max-width: 680px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .three-col {
+    grid-template-columns: 1fr;
+  }
+}
+
+.one-col {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+
+input {
+  border: 1px solid #999999;
+  padding: 8px;
+}
+
+textarea {
+  border: 1px solid #999999;
+  padding: 8px;
+  height: 120px;
+}
